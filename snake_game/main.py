@@ -34,6 +34,6 @@ while is_snake_moving:
     # Detect collision with wall
     if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
         is_snake_moving = False
-
+        scoreboard.game_over()
 
 screen.exitonclick()
