@@ -14,15 +14,20 @@ class Snake:
         self.head = self.squares[0]
 
     def create_snake(self):
-        leo_x_position = 0
-        leo_y_position = 0
-        for _ in range(3):
-            leo = Turtle("square")
-            leo.color("white")
-            leo.penup()
-            leo.goto(x=leo_x_position, y=leo_y_position)
-            leo_x_position -= 20
-            self.squares.append(leo)
+        starting_positions = [(0, 0), (0, -20), (0, -40)]
+        for position in starting_positions:
+            self.add_segment(position)
+
+    def add_segment(self, position):
+
+        leo = Turtle("square")
+        leo.color("white")
+        leo.penup()
+        leo.goto(position)
+        self.squares.append(leo)
+
+    def extend(self):
+        self.add_segment(self.squares[-1].position())
 
     def move(self):
         for square_num in range(len(self.squares) - 1, 0, -1):
