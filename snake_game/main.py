@@ -39,10 +39,8 @@ while is_snake_moving:
         scoreboard.game_over()
 
     # Detect collision with tail
-    for square in snake.squares:
-        if square == snake.head:
-            pass
-        elif snake.head.distance(square) < 10:
+    for square in snake.squares[1:]:
+        if snake.head.distance(square) < 10:
             is_snake_moving = False
             scoreboard.game_over()
 
