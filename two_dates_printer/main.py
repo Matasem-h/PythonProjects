@@ -10,7 +10,7 @@ delta = end_date - start_date
 for i in range(delta.days + 1):
     day = start_date + timedelta(days=i)
     if day.weekday() == 4:
-        print(day.strftime("%d.%m.%Y") + " Friday")
+        print(day.strftime("%d.%m.%Y") + " Friday") # This is the date format I personally prefer
     # elif day.weekday() == 5:
     #     print(day.strftime("%d.%m.%Y") + " Saturday")
     else:
