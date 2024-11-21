@@ -1,4 +1,5 @@
-# This code can be used to print all dates between two specified dates, this was written by for my personal use.
+# This code can be used to print all dates between two specified dates.
+# I wrote this code specifically for myself, so I can keep track of my daily achievements.
 from datetime import date, timedelta
 
 # You can enter any two dates here to print all the days between them.
