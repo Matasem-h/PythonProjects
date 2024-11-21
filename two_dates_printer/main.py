@@ -1,4 +1,5 @@
 from datetime import date, timedelta
+# This code can be used to print all dates between two specified dates, this was written by for my personal use.
 
 start_date = date(2024, 11, 20)
 end_date = date(2025, 6, 30)
