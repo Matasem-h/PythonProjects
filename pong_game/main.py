@@ -22,7 +22,7 @@ screen.onkey(key="s", fun=l_paddle.l_move_down)
 
 game_is_on = True
 while game_is_on:
-    time.sleep(0.1)
+    # time.sleep(0.1)
     screen.update()
     ball.move()
 
@@ -38,11 +38,12 @@ while game_is_on:
     # Detect when r_paddle misses
     if ball.xcor() > 380:
         ball.reset_position()
-        scoreboard.l_point()
+        scoreboard.r_point()
 
     # Detect when l_paddle misses
     if ball.xcor() < -380:
         ball.reset_position()
+        scoreboard.l_point()
 
 
 screen.exitonclick()
