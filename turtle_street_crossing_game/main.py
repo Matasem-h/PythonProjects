@@ -9,6 +9,8 @@ screen.setup(width=600, height=600)
 screen.tracer(0)
 
 player = Player()
+can_manager = CarManager
+
 screen.listen()
 screen.onkey(player.move_up, "Up")
 
