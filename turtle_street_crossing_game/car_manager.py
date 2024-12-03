@@ -6,12 +6,21 @@ MOVE_INCREMENT = 10
 
 
 class CarManager:
-    # oga_boga = True
-    for _ in range(10):
-        random_x = random.randint(0, 230)
-        random_y = random.randint(-230, 230)
-        car = Turtle("square")
-        car.color(random.choice(COLORS))
-        car.shapesize(1, 2)
-        car.penup()
-        car.goto(random_x, random_y)
+    def __init__(self):
+        self.all_cars = []
+
+    def create_car(self):
+        random_chance = random.randint(1, 6)
+        if random_chance == 1:
+            car = Turtle("square")
+            car.color(random.choice(COLORS))
+            car.shapesize(1, 2)
+            car.penup()
+            random_y = random.randint(-230, 250)
+            car.goto(300, random_y)
+            self.all_cars.append(car)
+
+    def move_car(self):
+        for car in self.all_cars:
+            car.backward(STARTING_MOVE_DISTANCE)
+
