@@ -4,8 +4,9 @@ MOVE_DISTANCE = 10
 FINISH_LINE_Y = 280
 
 
-class Player:
+class Player(Turtle):
     def __init__(self):
+        super().__init__()
         self.ken = Turtle("turtle")
         self.ken.hideturtle()
         self.ken.penup()

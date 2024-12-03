@@ -6,9 +6,9 @@ MOVE_INCREMENT = 10
 
 
 class CarManager:
-    oga_boga = True
-    while oga_boga:
-        random_x = random.randint(-230, 230)
+    # oga_boga = True
+    for _ in range(10):
+        random_x = random.randint(0, 230)
         random_y = random.randint(-230, 230)
         car = Turtle("square")
         car.color(random.choice(COLORS))
