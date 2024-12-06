@@ -20,4 +20,4 @@ data = pandas.read_csv("weather_data.csv")
 # print(data["condition"])
 # print(data.condition)
 
-data[data.day == "Monday"["day"]]
+print(data[data.day == "Monday"])
