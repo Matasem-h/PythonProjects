@@ -52,4 +52,5 @@ data_dict = {
     "Count": [gray_squirrels_count, red_squirrels_count, Black_squirrels_count]
 }
 
-
+df = pandas.DataFrame(data_dict)
+df.to_csv("squirrel_count.csv")
