@@ -29,7 +29,7 @@ import pandas
 # print(monday_temp_F)
 
 
-# Create a dataframe
+# Creating a dataframe
 data_dict = {
     "students": ["Amy", "James", "Angela"],
     "scores": [76, 56, 65]
