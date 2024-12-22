@@ -9,6 +9,7 @@
 # result = [num for num in numbers if num % 2 == 0]
 # print(result)
 
+##################################################################################################################
 # This is a shorter version of the one below.
 # missing_states = [state for state in all_states if state not in guessed_states]
 
@@ -17,9 +18,10 @@
 # for state in all_states:
 #     if state not in guessed_states:
 #         missing_states.append(state)
+##################################################################################################################
 
-
-
+# Dictionary Comprehension from another dictionary
+# new_dict = {new_key: new_value for (key, value) in dict.items() if test}
 
 
 
