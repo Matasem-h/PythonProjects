@@ -9,7 +9,14 @@
 # result = [num for num in numbers if num % 2 == 0]
 # print(result)
 
+# This is a shorter version of the one below.
+# missing_states = [state for state in all_states if state not in guessed_states]
 
+# The one below
+# missing_states = []
+# for state in all_states:
+#     if state not in guessed_states:
+#         missing_states.append(state)
 
 
 
