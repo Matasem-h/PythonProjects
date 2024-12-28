@@ -28,3 +28,16 @@
 # students_scores = {student:random.randint(1, 100) for student in names}
 # passed_students = {student:score for (student, score) in students_scores.items() if score >= 60}
 
+import tkinter
+
+window = tkinter.Tk()
+window.title("My First GUI Program")
+window.minsize(width=500, height=300)
+
+# Label
+
+my_label = tkinter.Label(text="I Am a Label", font=("Arial", 24, "italic"))
+my_label.pack()
+
+
+window.mainloop()
