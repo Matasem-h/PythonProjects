@@ -23,10 +23,13 @@ def start_timer():
 
     if reps % 8 == 0:
         count_down(long_break_sec)
+        title_label.config(text="Break", fg=RED)
     elif reps % 2 == 0:
         count_down(short_break_sec)
+        title_label.config(text="Break", fg=PINK)
     else:
         count_down(work_sec)
+        title_label.config(text="Work", fg=GREEN)
 
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
@@ -64,7 +67,7 @@ start_button.grid(column=0, row=2)
 reset_button = Button(text="Reset", highlightthickness=0)
 reset_button.grid(column=2, row=2)
 
-check_marks = Label(text="✅", fg=GREEN, bg=YELLOW)
+check_marks = Label(text="✔", fg=GREEN, bg=YELLOW)
 check_marks.grid(column=1, row=3)
 
 
