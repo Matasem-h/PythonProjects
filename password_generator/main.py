@@ -28,6 +28,7 @@ website_entry = Entry(width=entries_width)
 website_entry.grid(row=1, column=1, columnspan=2)
 email_entry = Entry(width=entries_width)
 email_entry.grid(row=2, column=1, columnspan=2)
+email_entry.insert(0, "Matasem.h97@gmail.com")
 password_entry = Entry(width=entries_width)
 password_entry.grid(row=3, column=1, columnspan=2)
 
