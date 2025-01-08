@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
-import random
+from random import choice, randint, shuffle
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 
 # Password Generator Project
@@ -8,12 +8,12 @@ letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
 numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
-password_letters = [random.choice(letters) for _ in range(random.randint(8, 10))]
-password_symbols = [random.choice(symbols) for _ in range(random.randint(2, 4))]
-password_numbers = [random.choice(numbers) for _ in range(random.randint(2, 4))]
+password_letters = [choice(letters) for _ in range(randint(8, 10))]
+password_symbols = [choice(symbols) for _ in range(randint(2, 4))]
+password_numbers = [choice(numbers) for _ in range(randint(2, 4))]
 
 password_list = password_letters + password_symbols + password_numbers
-random.shuffle(password_list)
+shuffle(password_list)
 
 password = ""
 for char in password_list:
