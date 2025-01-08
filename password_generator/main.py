@@ -15,7 +15,7 @@ password_numbers = [choice(numbers) for _ in range(randint(2, 4))]
 password_list = password_letters + password_symbols + password_numbers
 shuffle(password_list)
 
-"".join(password_list)
+password = "".join(password_list)
 
 print(f"Your password is: {password}")
 # ---------------------------- SAVE PASSWORD ------------------------------- #
