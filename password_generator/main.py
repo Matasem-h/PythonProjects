@@ -5,11 +5,9 @@ from tkinter import *
 
 
 def save():
-
     website = website_entry.get()
     email = email_entry.get()
     password = password_entry.get()
-
     with open("saved_passwords.txt", "a") as data_file:
         data_file.write(f"{website} | {email} | {password}\n")
         website_entry.delete(0, END)
