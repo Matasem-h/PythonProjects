@@ -67,9 +67,12 @@
 # window.mainloop()
 
 
-# # FileNotFound Error
-# with open("a_file.txt") as file:
-#     file.read()
+# FileNotFound Error
+try:
+    file = open("a_file.txt")
+except:
+    file = open("a_file.txt", "w")
+
 
 # # KeyError
 # a_dictionary = {"key": "value"}
