@@ -1,4 +1,7 @@
 import requests
 
 response = requests.get(url="http://api.open-notify.org/iss-now.json")
-print(response)
+if response.status_code == 404:
+    raise Exception("That resource does not exist.")
+elif response.status_code == 401:
+    raise Exception("You are not allowed to access this data.")
