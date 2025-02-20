@@ -117,7 +117,8 @@ MY_LONG = -0.127758
 
 parameters = {
     "lat": MY_LAT,
-    "lng": MY_LONG
+    "lng": MY_LONG,
+    "formatted": 0
 }
 
 response = requests.get("https://api.sunrise-sunset.org/json", params=parameters)
@@ -126,5 +127,6 @@ data = response.json()
 sunrise = data["results"]["sunrise"]
 sunset = data["results"]["sunset"]
 
-print(sunrise, sunset)
+print(sunrise)
+print(sunset)
 time_now = datetime.now()
