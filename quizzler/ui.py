@@ -13,7 +13,13 @@ class QuizzInterface:
         self.score_label.grid(row=0, column=1)
 
         self.canvas = Canvas(width=300, height=250, bg="white")
-        self.question_text = self.canvas.create_text(150, 125, text="Some question text", fill=THEME_COLOR)
+        self.question_text = self.canvas.create_text(
+            150,
+            125,
+            text="Some question text",
+            fill=THEME_COLOR,
+            font=("Arial", 20, "italic")
+        )
         self.canvas.grid(row=1, column=0, columnspan=2)
 
 
