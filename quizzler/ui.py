@@ -39,6 +39,8 @@ class QuizzInterface:
         self.window.mainloop()
 
     def get_next_question(self):
+        self.canvas.config(bg="white")
+        self.score_label.config(text=f"Score: {self.quiz.score}")
         q_text = self.quiz.next_question()
         self.canvas.itemconfig(self.question_text, text=q_text)
 
@@ -49,5 +51,9 @@ class QuizzInterface:
         self.give_feedback(self.quiz.check_answer("False"))
 
     def give_feedback(self, is_right):
-        
+        if is_right:
+            self.canvas.config(bg="green")
+        else:
+            self.canvas.config(bg="red")
+        self.window.after(1000, self.get_next_question)
 
