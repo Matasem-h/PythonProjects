@@ -1,10 +1,10 @@
 import requests
 from twilio.rest import Client
 
-OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
-api_key = "0aa8d86adf6eda1f4c445b3798580c1e"
-account_sid = "ACc85dbc2ef114dc4572df53fcf26b59ac"
-auth_token = "bbc4d373d2351b6be1f8fa37755bc778"
+# OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
+api_key = "x"
+account_sid = "x"
+auth_token = "x"
 
 # 21.485811
 # 39.192505
@@ -31,9 +31,7 @@ if will_rain:
     client = Client(account_sid, auth_token)
     message = client.messages.create(
         body="⛈️ It is going to rain! ⛈️",
-        from_="+12545407541",
-        to="+966503272912",
+        from_="+x",
+        to="x",
     )
     print(message.status)
-
- # Twilion number +12545407541
