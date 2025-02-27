@@ -7,7 +7,10 @@ weather_params = {
     "lat": 21.485811,
     "lon": 39.192505,
     "appid": api_key,
+    "cnt": 4,
 }
 
 response = requests.get(OWM_Endpoint, params=weather_params)
-print(response.json())
+response.raise_for_status()
+weather_data = response.json()
+print(weather_data)
