@@ -32,7 +32,7 @@ if will_rain:
     message = client.messages.create(
         body="⛈️ It is going to rain! ⛈️",
         from_="+12545407541",
-        to="+966503292912",
+        to="+966503272912",
     )
     print(message.status)
 
