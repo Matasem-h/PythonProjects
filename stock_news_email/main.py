@@ -39,6 +39,8 @@ diff_percent = (difference / float(yesterday_closing_price)) * 100
 print(diff_percent)
 
 #TODO 5. - If TODO4 percentage is greater than 5 then print("Get News").
+if diff_percent > 2:
+    print("Get News")
 
     ## STEP 2: https://newsapi.org/ 
     # Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME. 
