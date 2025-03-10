@@ -12,6 +12,7 @@ user_param = {
     "notMinor": "yes",
 }
 # https://pixe.la/@matasem - My account
+# https://pixe.la/v1/users/matasem/graphs/graph1.html My graph
 
 # response = requests.post(url=pixela_endpoint, json=user_param)
 # print(response.text)
