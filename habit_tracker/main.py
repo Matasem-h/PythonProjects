@@ -2,6 +2,7 @@ import requests
 
 USERNAME = "matasem"
 TOKEN = "juifwe345ijokklmdfs43klm5"
+GRAPH_ID = "graph1"
 
 pixela_endpoint = "https://pixe.la/v1/users"
 
@@ -20,7 +21,7 @@ user_param = {
 graph_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs"
 
 graph_config = {
-    "id": "graph1",
+    "id": GRAPH_ID,
     "name": "Push-ups Graph",
     "unit": "commit",
     "type": "int",
@@ -31,5 +32,16 @@ headers = {
     "X-USER-TOKEN": TOKEN,
 }
 
-response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
+# response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
+# print(response.text)
+
+pixel_creation_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}"
+
+pixel_data = {
+    "date": "20250310",
+    "quantity": "20",
+}
+
+response = requests.post(url=pixel_creation_endpoint, json=pixel_data, headers=headers)
 print(response.text)
+
