@@ -49,4 +49,3 @@ for _ in range(10):
 
 screen = Screen()
 screen.exitonclick()
-
