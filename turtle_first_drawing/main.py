@@ -32,6 +32,11 @@ for _ in range(7):
     tim.right(360 / 7)
     tim.pencolor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
 
+for _ in range(8):
+    tim.forward(100)
+    tim.right(360 / 8)
+    tim.pencolor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+
 
 screen = Screen()
 screen.exitonclick()
