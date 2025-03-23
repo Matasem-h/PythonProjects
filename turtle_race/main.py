@@ -21,5 +21,10 @@ Raffaello.penup()
 Raffaello.color(colors[1])
 Raffaello.goto(x=-230, y=25)
 
+Michelangelo = Turtle(shape="turtle")
+Michelangelo.penup()
+Michelangelo.color(colors[2])
+Michelangelo.goto(x=-230, y=-25)
+
 
 screen.exitonclick()
