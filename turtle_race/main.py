@@ -16,4 +16,10 @@ Leonardo.penup()
 Leonardo.color(colors[0])
 Leonardo.goto(x=-230, y=0)
 
+Raffaello = Turtle(shape="turtle")
+Raffaello.penup()
+Raffaello.color(colors[1])
+Raffaello.goto(x=-230, y=25)
+
+
 screen.exitonclick()
