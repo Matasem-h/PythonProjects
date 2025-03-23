@@ -36,5 +36,10 @@ Casey_Jones.penup()
 Casey_Jones.color(colors[4])
 Casey_Jones.goto(x=-230, y=-50)
 
+April_ONeil = Turtle(shape="turtle")
+April_ONeil.penup()
+April_ONeil.color(colors[5])
+April_ONeil.goto(x=-230, y=75)
+
 
 screen.exitonclick()
