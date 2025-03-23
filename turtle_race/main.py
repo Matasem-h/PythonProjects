@@ -7,9 +7,13 @@ screen = Screen()
 screen.setup(width=500, height=400)
 user_bet = screen.textinput(title="Make your bet", prompt="Which turtle will win the race? Enter a color from"
                                                           " (red, orange, yellow, green, blue, purple): ").lower()
-
 print(user_bet)
 colors = ["red", "orange", "yellow", "green", "blue", "purple"]
 random.shuffle(colors)
+
+Leonardo = Turtle(shape="turtle")
+Leonardo.penup()
+Leonardo.color(colors[0])
+Leonardo.goto(x=-230, y=0)
 
 screen.exitonclick()
