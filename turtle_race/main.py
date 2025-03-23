@@ -31,5 +31,10 @@ Donatello.penup()
 Donatello.color(colors[3])
 Donatello.goto(x=-230, y=50)
 
+Casey_Jones = Turtle(shape="turtle")
+Casey_Jones.penup()
+Casey_Jones.color(colors[4])
+Casey_Jones.goto(x=-230, y=-50)
+
 
 screen.exitonclick()
