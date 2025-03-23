@@ -26,5 +26,10 @@ Michelangelo.penup()
 Michelangelo.color(colors[2])
 Michelangelo.goto(x=-230, y=-25)
 
+Donatello = Turtle(shape="turtle")
+Donatello.penup()
+Donatello.color(colors[3])
+Donatello.goto(x=-230, y=50)
+
 
 screen.exitonclick()
