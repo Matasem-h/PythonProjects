@@ -46,5 +46,9 @@ all_turtles = [Leonardo, Raffaello, Michelangelo, Donatello, Casey_Jones, April_
 if user_bet:
     is_race_on = True
 
+while is_race_on:
+    for turtle in all_turtles:
+        turtle.forward(random.randint(0, 10))
+
 
 screen.exitonclick()
