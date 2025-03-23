@@ -41,5 +41,6 @@ April_ONeil.penup()
 April_ONeil.color(colors[5])
 April_ONeil.goto(x=-230, y=75)
 
+all_turtles = [Leonardo, Raffaello, Michelangelo, Donatello, Casey_Jones, April_ONeil]
 
 screen.exitonclick()
