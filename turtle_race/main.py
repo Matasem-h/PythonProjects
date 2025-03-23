@@ -43,4 +43,8 @@ April_ONeil.goto(x=-230, y=75)
 
 all_turtles = [Leonardo, Raffaello, Michelangelo, Donatello, Casey_Jones, April_ONeil]
 
+if user_bet:
+    is_race_on = True
+
+
 screen.exitonclick()
