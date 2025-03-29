@@ -42,3 +42,9 @@ def main_function():
     coffee_order = input("Hello, what would you like to order? \n").lower()
     if coffee_order == "off":
         return
+
+# TODO: 3. Print report.
+    elif coffee_order == "report":
+        print(f"Water: {resources["water"]}ml\nMilk: {resources["milk"]}ml\nCoffee: {resources["coffee"]}g\nMoney: ${resources["money"]}\n")
+
+
