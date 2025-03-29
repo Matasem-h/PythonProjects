@@ -33,3 +33,12 @@ resources = {
     "coffee": 100,
     "money": 0,
 }
+
+# TODO: 1. Prompt user by asking “What would you like? (espresso/latte/cappuccino)
+# TODO: 2. Turn off the Coffee Machine by entering “off” to the prompt.
+
+
+def main_function():
+    coffee_order = input("Hello, what would you like to order? \n").lower()
+    if coffee_order == "off":
+        return
