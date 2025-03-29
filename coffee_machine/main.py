@@ -69,3 +69,16 @@ def main_function():
             print("Sorry! There is not enough resources.")
 
 
+# TODO: 5. Process coins.
+    if coffee_order in MENU:
+        cost = MENU[coffee_order]["cost"]
+        print(f"The cost of {coffee_order} is ${cost} Please insert coins.")
+
+        quarters = int(input("How many quarters?: ")) * 0.25
+        dimes = int(input("How many dimes?: ")) * 0.10
+        nickles = int(input("How many nickles?: ")) * 0.05
+        pennies = int(input("How many pennies?: ")) * 0.01
+
+        total_inserted = quarters + dimes + nickles + pennies
+
+
