@@ -82,3 +82,13 @@ def main_function():
         total_inserted = quarters + dimes + nickles + pennies
 
 
+# TODO: 6. Check transaction successful?
+        if total_inserted >= cost:
+            change = round(total_inserted - cost, 2)
+            print(f"Transaction successful! Here is your drink. Your change is ${change}")
+            resources["money"] += cost  # Add the cost to the resources
+        else:
+            print(f"Sorry, that's not enough money, ${total_inserted} refunded.")
+
+
+main_function()
