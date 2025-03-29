@@ -48,3 +48,24 @@ def main_function():
         print(f"Water: {resources["water"]}ml\nMilk: {resources["milk"]}ml\nCoffee: {resources["coffee"]}g\nMoney: ${resources["money"]}\n")
 
 
+# TODO: 4. Check resources sufficient?
+
+    elif coffee_order == "espresso":
+        if MENU["espresso"]["ingredients"]["water"] <= resources["water"] and MENU["espresso"]["ingredients"]["coffee"] <= resources["coffee"]:
+            print("You can drink an espresso.")
+        else:
+            print("Sorry! There is not enough resources.")
+
+    elif coffee_order == "latte":
+        if MENU["latte"]["ingredients"]["water"] <= resources["water"] and MENU["latte"]["ingredients"]["coffee"] <= resources["coffee"] and MENU["latte"]["ingredients"]["milk"] <= resources["milk"]:
+            print("You can drink a latte.")
+        else:
+            print("Sorry! There is not enough resources.")
+
+    elif coffee_order == "cappuccino":
+        if MENU["cappuccino"]["ingredients"]["water"] <= resources["water"] and MENU["cappuccino"]["ingredients"]["coffee"] <= resources["coffee"] and MENU["cappuccino"]["ingredients"]["milk"] <= resources["milk"]:
+                print("You can drink a cappuccino.")
+        else:
+            print("Sorry! There is not enough resources.")
+
+
