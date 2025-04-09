@@ -21,3 +21,14 @@ print(heading)
 
 section_heading = soup.find(name="h3", class_="heading")
 print(section_heading)
+
+name = soup.select_one(selector="name")
+print(name)
+
+soup.select(".heading")
+print(heading)
+
+
+
+
+
