@@ -5,15 +5,17 @@ response = requests.get("https://news.ycombinator.com/news")
 yc_webpage = response.text
 
 soup = BeautifulSoup(yc_webpage, "html.parser")
-articles = soup.find_all(name="a", class_="sitebit comhead")
+articles = soup.find_all(name="span", class_="titleline")
 article_texts = []
 article_links = []
 
 for article_tag in articles:
-    text = article_tag.getText()
-    article_texts.append(text)
-    link = article_tag.get("href")
-    article_links.append(link)
+    link_tag = article_tag.find("a")
+    if link_tag:
+        text = link_tag.getText()
+        article_texts.append(text)
+        link = link_tag.get("href")
+        article_links.append(link)
 
 article_upvotes = [int(score.getText().split()[0]) for score in soup.find_all(name="span", class_="score")]
 
