@@ -27,13 +27,6 @@ search = driver.find_element(By.NAME, value="search")
 # Sending keyboard input to Selenium
 search.send_keys("Python", Keys.ENTER)
 
-# Find first name, last name, and email fields using inspect
-first_name = driver.find_element(By.NAME, value="fName")
-last_name = driver.find_element(By.NAME, value="lName")
-email = driver.find_element(By.NAME, value="email")
-
-
-
 # To close Chrome after program finishes
 # driver.close()
 # driver.quit()
