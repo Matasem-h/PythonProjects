@@ -31,14 +31,18 @@ driver.get("https://www.python.org/")
 
 
 event_times = driver.find_elements(By.CSS_SELECTOR, value=".event-widget time")
-for time in event_times:
-    print(time.text)
-
 event_names = driver.find_elements(By.CSS_SELECTOR, value=".event-widget li a")
-for name in event_names:
-    print(name.text)
 
+events = {}
 
-# Close Chrome
+for n in range(len(event_times)):
+    events[n] = {
+        "time": event_times[n].text,
+        "name": event_names[n].text,
+    }
+
+print(events)
+
+# To close Chrome after program finishes
 # driver.close()
 driver.quit()
