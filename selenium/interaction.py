@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
 # To keep Chrome open after program finishes
 chrome_options = webdriver.ChromeOptions()
@@ -24,8 +25,7 @@ all_portals = driver.find_element(By.LINK_TEXT, value="Content portals")
 search = driver.find_element(By.NAME, value="search")
 
 # Sending keyboard input to Selenium
-search.send_keys("Python")
-
+search.send_keys("Python", Keys.ENTER)
 
 
 # To close Chrome after program finishes
