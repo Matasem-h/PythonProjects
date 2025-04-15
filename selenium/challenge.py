@@ -22,4 +22,6 @@ first_name.send_keys("Matasem")
 last_name.send_keys("Habibullah")
 email.send_keys("123@gmail.com")
 
-
+# Locate the "Sign Up" button and click on it
+submit = driver.find_element(By.CSS_SELECTOR, value="form button")
+submit.click()
