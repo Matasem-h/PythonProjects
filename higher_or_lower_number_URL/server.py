@@ -22,3 +22,6 @@ def guess_number(guess):
     elif guess < random_number:
         return "<h1 style='color: red'>Too low, try again!</h1>"\
                "<img src='https://media.giphy.com/media/jD4DwBtqPXRXa/giphy.gif'/>"
+    else:
+        return "<h1 style='color: green'>You found me!</h1>" \
+               "<img src='https://media.giphy.com/media/4T7e4DmcrP9du/giphy.gif'/>"
