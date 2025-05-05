@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 import random
 import datetime
+import requests
 
 
 app = Flask(__name__)
@@ -15,6 +16,10 @@ def home():
 
 @app.route("/guess/<name>")
 def guess(name):
+    gender_url = f"https://api.agify.io?name={name}"
+    gender_response = requests.get(gender_url)
+    
+
     return render_template("guess.html", person_name=name)
 
 
