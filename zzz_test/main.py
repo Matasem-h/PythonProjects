@@ -4,8 +4,8 @@
 	# Date printing
 from datetime import date, timedelta
 
-start_date = date(2025, 5, 8)
-end_date = date(2025, 10, 29)
+start_date = date(2025, 10, 29)
+end_date = date(2026, 4, 29)
 
 delta = end_date - start_date
 
