@@ -1,4 +1,4 @@
-# Unit 1 Code
+# Unit 1 --- sss ---
 # print("Hello, World!")       # Hello, World! In Python
 
 
@@ -28,7 +28,7 @@
 
 
 
-# Unit 2 Code
+# Unit 2 --- Strings ---
 # my_file = open("my_file.txt", "w")
 # my_file.write("I am writing to a file in Python!!!")
 # my_file.close()
@@ -38,10 +38,11 @@
 # my_file.close()
 
 
-my_string = "He said 'Hi'"
+# my_string = "He said 'Hi'"
+# print(my_string)
+
+my_string = "He said \"Hello\"\nNew line here."
 print(my_string)
-
-
 
 
 
