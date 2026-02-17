@@ -63,6 +63,13 @@
 # s = "Hello, World!"
 # print(s[::2])
 
+list = [1, 2.6, "Bob"]
+list.append("Janet")
+list.insert(2, 99)
+list.remove(2.6)
+x = list.count(1)
+print(list, x)
+
 
 # Unit 3 Code
 
