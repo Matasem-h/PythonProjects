@@ -29,6 +29,7 @@
 
 
 # Unit 2 --- Strings ---
+
 # my_file = open("my_file.txt", "w")
 # my_file.write("I am writing to a file in Python!!!")
 # my_file.close()
@@ -63,15 +64,19 @@
 # s = "Hello, World!"
 # print(s[::2])
 
-list = [1, 2.6, "Bob"]
-list.append("Janet")
-list.insert(2, 99)
-list.remove(2.6)
-x = list.count(1)
-print(list, x)
+# list = [1, 2.6, "Bob"]
+# list.append("Janet")
+# list.insert(2, 99)
+# list.remove(2.6)
+# x = list.count(1)
+# print(list, x)
 
 
-# Unit 3 Code
+# Unit 3 --- Assignment and Expressions ---
+# e = 2 ** 2 * 3 / 4 + 6 - 7        # 2.0
+# e = 2 ** 2 * 3 / (4 + 6 - 7)      # 4.0
+# e = 2 ** (2 * 3) / 4 + 6 - 7      # 15.0
+# print(e)
 
 
 
