@@ -60,8 +60,8 @@
 # my_string = "My name is {name} and I'm {age} years old.".format(name=name, age=age)
 # print(my_string)
 
-
-
+# s = "Hello, World!"
+# print(s[::2])
 
 
 # Unit 3 Code
