@@ -41,13 +41,24 @@
 # my_string = "He said 'Hi'"
 # print(my_string)
 
-my_string = "He said \"Hello\"\nNew line here."
-print(my_string)
+# my_string = "He said \"Hello\"\nNew line here."
+# print(my_string)
 
+# my_string = r"C:\folder\file.txt\n"
+# print(my_string)
 
+# my_string = """Line one
+# line two
+# line three"""
+# print(my_string)
 
+# my_string = "My name is {name} and I'm {age} years old.".format(name="Joe", age=28)
+# print(my_string)
 
-
+# name = "Joe"
+# age = 28
+# my_string = "My name is {name} and I'm {age} years old.".format(name=name, age=age)
+# print(my_string)
 
 
 
