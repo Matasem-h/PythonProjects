@@ -86,20 +86,21 @@
 
 # print("Print is amazing!", 5, 7.2, 0x65)
 
+    # Input
+# print("Type a value:")
+# my_variable = input()
+# print("You entered:", my_variable)
+# print("Try it again:")
+# my_variable = input()
+# print("You entered: ", my_variable)
 
+my_string = input()
+my_int = input()
+my_float = input()
 
-
-
-
-
-
-
-
-
-
-
-
-
+print(type(my_string))
+print(type(my_int))
+print(type(my_float))
 
 # Unit 4 Code
 
