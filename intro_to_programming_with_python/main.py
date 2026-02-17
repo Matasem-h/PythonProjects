@@ -73,13 +73,18 @@
 
 
 # Unit 3 --- Assignment and Expressions ---
+    # PEMDAS
 # e = 2 ** 2 * 3 / 4 + 6 - 7        # 2.0
 # e = 2 ** 2 * 3 / (4 + 6 - 7)      # 4.0
 # e = 2 ** (2 * 3) / 4 + 6 - 7      # 15.0
 # print(e)
 
+    # Chained Assignment
+# a = b = c = d = 10        # prints 10 10 10 10
+# print(a, b, c, d)
+# a = b = c = d + 5 = 10      # SyntaxError: cannot assign to expression
 
-
+# print("Print is amazing!", 5, 7.2, 0x65)
 
 
 
