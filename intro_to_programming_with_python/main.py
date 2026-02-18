@@ -94,13 +94,17 @@
 # my_variable = input()
 # print("You entered: ", my_variable)
 
-my_string = input()
-my_int = input()
-my_float = input()
+# my_string = input()
+# my_int = input()
+# my_float = input()
+# print(type(my_string))
+# print(type(my_int))
+# print(type(my_float))
 
-print(type(my_string))
-print(type(my_int))
-print(type(my_float))
+# int("65")			# 65
+# float("23.52")	# 23.52
+# str(67)			# "67"
+# int("Hi")			# ValueError
 
 # Unit 4 Code
 
