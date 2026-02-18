@@ -106,6 +106,57 @@
 # str(67)			# "67"
 # int("Hi")			# ValueError
 
+    # If-Statement
+# print("Enter a number")
+# my_number = input()
+#
+# if int(my_number) < 10:
+#     print("Your number is less than 10!")
+#     print(my_number)
+#
+# else:
+#     print("Your number is more than 10!")
+#     print(my_number)
+#
+# print("We're done!")
+
+#     # Elif-Statement
+# print("Enter a number:")
+# my_number = int(input())
+#
+# if my_number < 0:
+#     print("Your number is negative.")
+#
+# elif my_number == 0:
+#     print("Your number is zero.")
+#
+# else:
+#     print("Your number is positive.")
+#
+# print(my_number)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Unit 4 Code
 
 
