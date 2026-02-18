@@ -135,6 +135,49 @@
 #
 # print(my_number)
 
+    # Loop
+# for x in range(5, 10, 1):       # 0 - 9
+#     print(x)
+
+# for x in range(5, 10, 2):       # Start, Stop, Step Parameters
+#     print(x)
+
+# my_players = ["Franz Beckenbauer", "Gerd Muller", "Lothar Matthaus", "Manuel Neuer"]
+# for x in range(4):
+#     print("Player " + str(x + 1) + ": " + my_players[x])
+
+
+# my_players = ["Franz Beckenbauer", "Gerd Muller", "Lothar Matthaus", "Manuel Neuer"]
+# x = 0
+# while x < 4:
+#     print("Player " + str(x + 1) + ": " + my_players[x])
+#     x += 1
+# print("End of roster")
+
+# my_players = ["Franz Beckenbauer", "Gerd Muller", "Lothar Matthaus", "Manuel Neuer"]
+# for x in range(4):
+#     if x > 1:
+#         break
+#     print("Player " + str(x + 1) + ": " + my_players[x])
+# print("End of roster")
+
+# for x in range(2, 21, 2):
+#     print(x)
+
+    # Iterator
+# my_list = [4, 8, 15, 16, 23, 42]
+# my_iterator = iter(my_list)
+# print(next(my_iterator))
+# print(next(my_iterator))
+# print(next(my_iterator))
+# print(next(my_iterator))
+# print(next(my_iterator))
+# print(next(my_iterator))
+
+my_list = [4, 8, 15, 16, 23, 42]
+my_iterator = iter(my_list)
+for x in my_iterator:
+    print(x)
 
 
 
@@ -142,22 +185,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Unit 4 Code
+# Unit 4 --- sss ---
 
 
 
