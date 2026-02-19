@@ -221,13 +221,69 @@
 # print("We're almost finished!")
 # print("And... now we're done.")
 
+# def my_function():
+#     print("Nice function!")
+#     my_variable = "I love functions!"
+#     print("my_variable" + my_variable)
+#
+#
+# print("Starting program...")
+# my_function()
+# if my_variable == "Quit":  # my_variable is defined inside a function, so we get NameError.
+#     print("Ending program...")
+
+
+# def my_function():
+#     my_variable = "Inside of the function"
+#     print("my_variable = " + my_variable)
+#
+#
+# my_variable = "Outside of the function"
+# print("my_variable = " + my_variable)
+# my_function()
+# print("my_variable = " + my_variable)
+
+
+def my_function():
+    print("In my function")
+
+    def my_nested_function():
+        print("In my nested function")
+        print("Exiting my nested function")
+
+    print("About to call the nested function")
+    my_nested_function()
+    print("Finishing call to nested function")
+    print("Exiting my function")
+
+
+print("About to call my function")
+my_function()
+print("Finished call to my function")
 
 
 
 
 
 
-# Unit 5 Code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Unit 5 --- sss ---
 
 
 
