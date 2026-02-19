@@ -3,31 +3,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Unit 2 --- Strings ---
 
 # my_file = open("my_file.txt", "w")
@@ -70,6 +45,7 @@
 # list.remove(2.6)
 # x = list.count(1)
 # print(list, x)
+
 
 
 # Unit 3 --- Assignment and Expressions ---
@@ -202,36 +178,48 @@
 
 
 
-
-
-
-
 # Unit 4 --- Functions ---
-int_1 = 1
-int_2 = 2
-print("Your two numbers are " + str(int_1) + " and " + str(int_2) + ".")
-
-int_3 = int_1 + int_2
-print(str(int_1) + " plus " + str(int_2) + " equals " + str(int_3) + ".")
-
-int_3 = int_1 - int_2
-print(str(int_1) + " minus " + str(int_2) + " equals " + str(int_3) + ".")
-
-int_3 = int_1 * int_2
-print(str(int_1) + " times " + str(int_2) + " equals " + str(int_3) + ".")
-
-int_3 = int_1 / int_2
-print(str(int_1) + " divided by " + str(int_2) + " equals " + str(int_3) + ".")
-
-
+# int_1 = 1
+# int_2 = 2
+# print("Your two numbers are " + str(int_1) + " and " + str(int_2) + ".")
+#
+# int_3 = int_1 + int_2
+# print(str(int_1) + " plus " + str(int_2) + " equals " + str(int_3) + ".")
+#
+# int_3 = int_1 - int_2
+# print(str(int_1) + " minus " + str(int_2) + " equals " + str(int_3) + ".")
+#
+# int_3 = int_1 * int_2
+# print(str(int_1) + " times " + str(int_2) + " equals " + str(int_3) + ".")
+#
+# int_3 = int_1 / int_2
+# print(str(int_1) + " divided by " + str(int_2) + " equals " + str(int_3) + ".")
 
 
+# def my_first_function():
+#     print("I can't believe I'm in a function!")
+#
+#
+# print("I'm not in a function!")
+# my_first_function()
+# print("I'm not in a function anymore!")
 
 
+# if this_new_variable == 5:
+#     print("In scope!")
+#
+# this_new_variable = 0
 
 
-
-
+# print("Welcome to my program!")
+# print("I'm excited to see if the variable is in scope!")
+#
+# if this_new_variable == 5:  # It's not in scope.
+#     print("In scope!")
+#
+# this_new_variable = 0
+# print("We're almost finished!")
+# print("And... now we're done.")
 
 
 
