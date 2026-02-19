@@ -164,7 +164,28 @@
 # for x in range(2, 21, 2):
 #     print(x)
 
-    # Iterator
+# print("Enter a number")
+# num = int(input())
+#
+# if num < 10:
+#     print("Less than 10!")
+#     print(num)
+# else:
+#     print("More than 10!")
+#     print(num)
+# print("We're done!")
+
+
+# for i in range(5, 10, 2):			# 0 1 2 3 4 5 6 7 8 9
+#     print(i)
+
+
+# players = ["Franz Beckenbauer", "Gerd Muller", "Lothar Matthaus", "Manuel Neuer"]
+#
+# for i in range(4):
+#     print(f"player {i + 1}: {players[i]}")
+
+# Iterator
 # my_list = [4, 8, 15, 16, 23, 42]
 # my_iterator = iter(my_list)
 # print(next(my_iterator))
@@ -174,10 +195,10 @@
 # print(next(my_iterator))
 # print(next(my_iterator))
 
-my_list = [4, 8, 15, 16, 23, 42]
-my_iterator = iter(my_list)
-for x in my_iterator:
-    print(x)
+# my_list = [4, 8, 15, 16, 23, 42]
+# my_iterator = iter(my_list)
+# for x in my_iterator:
+#     print(x)
 
 
 
@@ -185,9 +206,22 @@ for x in my_iterator:
 
 
 
-# Unit 4 --- sss ---
+# Unit 4 --- Functions ---
+int_1 = 1
+int_2 = 2
+print("Your two numbers are " + str(int_1) + " and " + str(int_2) + ".")
 
+int_3 = int_1 + int_2
+print(str(int_1) + " plus " + str(int_2) + " equals " + str(int_3) + ".")
 
+int_3 = int_1 - int_2
+print(str(int_1) + " minus " + str(int_2) + " equals " + str(int_3) + ".")
+
+int_3 = int_1 * int_2
+print(str(int_1) + " times " + str(int_2) + " equals " + str(int_3) + ".")
+
+int_3 = int_1 / int_2
+print(str(int_1) + " divided by " + str(int_2) + " equals " + str(int_3) + ".")
 
 
 
