@@ -298,22 +298,49 @@ x = 1
 # print("Outside of functions, x=" + str(x))
 
 
-x = 1
-def my_function():
-    x = 10
-    print("In my_function, x=" + str(x))
+# x = 1
+# def my_function():
+#     x = 10
+#     print("In my_function, x=" + str(x))
+#
+#     def my_nested_function():
+#         nonlocal x
+#         x = 100
+#         print("In my_nested_function, x=" + str(x))
+#
+#     my_nested_function()
+#     print("At the end of my_function, x=" + str(x))
+#
+#
+# my_function()
+# print("Outside of functions, x=" + str(x))
 
-    def my_nested_function():
-        nonlocal x
-        x = 100
-        print("In my_nested_function, x=" + str(x))
 
-    my_nested_function()
-    print("At the end of my_function, x=" + str(x))
+    # Function Arguments
+def add_three_numbers(a, b, c):
+    the_sum = a + b + c
+    print("The sum of " + str(a) + ", " + str(b) + ", and " + str(c) + " " + "is: " + str(the_sum))
 
 
-my_function()
-print("Outside of functions, x=" + str(x))
+add_three_numbers(1, 2, 3)       # Valid
+add_three_numbers(1, 2, 3, 4)    # TypeError: add_three_numbers() takes 3 positional arguments but 4 were given
+add_three_numbers(1, 2,)            # TypeError, missing 1 required positional argument: 'c'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
