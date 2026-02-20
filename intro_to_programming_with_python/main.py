@@ -327,25 +327,42 @@ x = 1
 # add_three_numbers(1, 2,)            # TypeError, missing 1 required positional argument: 'c'
 
 
-def person_info(name, phone, address, age):
-    print("Name: " + name)
-    print("Phone: " + phone)
-    print("Address: " + address)
-    print("Age: " + str(age))
+# def person_info(name, phone, address, age):
+#     print("Name: " + name)
+#     print("Phone: " + phone)
+#     print("Address: " + address)
+#     print("Age: " + str(age))
+#
+#
+# person_info("Alyssa Reinford", "423-192-2311", "152 Wander Lane", 23)
+# person_info(name="Rean Schwarzer", address="51 Cosmo Drive", phone="321-910-2238", age=28)
 
 
-person_info("Alyssa Reinford", "423-192-2311", "152 Wander Lane", 23)
-person_info(name="Rean Schwarzer", address="51 Cosmo Drive", phone="321-910-2238", age=28)
+# def do_math(a, b=1, c=2, d=3):
+#     result = a + b + c + d
+#     print("Sum is: " + str(result))
+#     result = a * b * c * d
+#     print("Product is: " + str(result))
+#
+# do_math(1)
+# do_math(1, 5)
+# do_math(1, 5, 10)
+# do_math(1, 5, 10, 20)
 
 
+def return_one_thing(a, b):
+    result = a + b
+    return result
 
 
+def return_two_things(a, b):
+    result1 = a + b
+    result2 = a - b
+    return result1, result2
 
 
-
-
-
-
+print(return_one_thing(5, 6))
+print(return_two_things(5, 6))  # prints (11, -1) enclosed by parentheses, because the function returns a tuple.
 
 # Unit 5 --- sss ---
 
