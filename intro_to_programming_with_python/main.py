@@ -244,34 +244,76 @@
 # print("my_variable = " + my_variable)
 
 
+# def my_function():
+#     print("In my function")
+#
+#     def my_nested_function():
+#         print("In my nested function")
+#         print("Exiting my nested function")
+#
+#     print("About to call the nested function")
+#     my_nested_function()
+#     print("Finishing call to nested function")
+#     print("Exiting my function")
+#
+#
+# print("About to call my function")
+# my_function()
+# print("Finished call to my function")
+
+
+x = 1
+
+
+# def my_function():
+#     x = 10
+#     print("In my function, x = " + str(x))
+#
+#     def my_nested_function():
+#         x = 100
+#         print("In my nested_func x = " + str(x))
+#
+#     my_nested_function()
+#
+#
+# my_function()
+# print("Outside of functions, x = " + str(x))
+
+# x = 1
+# def my_function():
+#     global x
+#     x = 10
+#     print("In my_function, x=" + str(x))
+#
+#     def my_nested_function():
+#         global x
+#         x = 100
+#         print("In my_nested_function, x=" + str(x))
+#
+#     my_nested_function()
+#     print("At the end of my_function, x=" + str(x))
+#
+#
+# my_function()
+# print("Outside of functions, x=" + str(x))
+
+
+x = 1
 def my_function():
-    print("In my function")
+    x = 10
+    print("In my_function, x=" + str(x))
 
     def my_nested_function():
-        print("In my nested function")
-        print("Exiting my nested function")
+        nonlocal x
+        x = 100
+        print("In my_nested_function, x=" + str(x))
 
-    print("About to call the nested function")
     my_nested_function()
-    print("Finishing call to nested function")
-    print("Exiting my function")
+    print("At the end of my_function, x=" + str(x))
 
 
-print("About to call my function")
 my_function()
-print("Finished call to my function")
-
-
-
-
-
-
-
-
-
-
-
-
+print("Outside of functions, x=" + str(x))
 
 
 
