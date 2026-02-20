@@ -317,30 +317,25 @@ x = 1
 
 
     # Function Arguments
-def add_three_numbers(a, b, c):
-    the_sum = a + b + c
-    print("The sum of " + str(a) + ", " + str(b) + ", and " + str(c) + " " + "is: " + str(the_sum))
+# def add_three_numbers(a, b, c):
+#     the_sum = a + b + c
+#     print("The sum of " + str(a) + ", " + str(b) + ", and " + str(c) + " " + "is: " + str(the_sum))
+#
+#
+# add_three_numbers(1, 2, 3)       # Valid
+# add_three_numbers(1, 2, 3, 4)    # TypeError: add_three_numbers() takes 3 positional arguments but 4 were given
+# add_three_numbers(1, 2,)            # TypeError, missing 1 required positional argument: 'c'
 
 
-add_three_numbers(1, 2, 3)       # Valid
-add_three_numbers(1, 2, 3, 4)    # TypeError: add_three_numbers() takes 3 positional arguments but 4 were given
-add_three_numbers(1, 2,)            # TypeError, missing 1 required positional argument: 'c'
+def person_info(name, phone, address, age):
+    print("Name: " + name)
+    print("Phone: " + phone)
+    print("Address: " + address)
+    print("Age: " + str(age))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+person_info("Alyssa Reinford", "423-192-2311", "152 Wander Lane", 23)
+person_info(name="Rean Schwarzer", address="51 Cosmo Drive", phone="321-910-2238", age=28)
 
 
 
