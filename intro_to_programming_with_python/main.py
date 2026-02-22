@@ -262,9 +262,7 @@
 # print("Finished call to my function")
 
 
-x = 1
-
-
+# x = 1
 # def my_function():
 #     x = 10
 #     print("In my function, x = " + str(x))
@@ -350,39 +348,58 @@ x = 1
 # do_math(1, 5, 10, 20)
 
 
-def return_one_thing(a, b):
-    result = a + b
-    return result
+# def return_one_thing(a, b):
+#     result = a + b
+#     return result
+#
+#
+# def return_two_things(a, b):
+#     result1 = a + b
+#     result2 = a - b
+#     return result1, result2
+#
+#
+# print(return_one_thing(5, 6))
+# print(return_two_things(5, 6))  # prints (11, -1) enclosed by parentheses, because the function returns a tuple.
 
 
-def return_two_things(a, b):
-    result1 = a + b
-    result2 = a - b
-    return result1, result2
+# x = 1
+# def outer():
+#     x = 10
+#     print("Outer", x)
+#
+#     def inner():
+#         x = 100
+#         print("Inner", x)
+#
+#     inner()
+#     print("Outer end:", x)
+#
+#
+# outer()
+# print("Global:", x)
 
 
-print(return_one_thing(5, 6))
-print(return_two_things(5, 6))  # prints (11, -1) enclosed by parentheses, because the function returns a tuple.
+# def person_info(name, phone, address, age):
+#     print(f"Name: {name}")
+#     print(f"Phone: {phone}")
+#     print(f"Address: {address}")
+#     print(f"Age: {age}")
+#
+#
+# person_info("Alyssa Reinford", "423-192-2311", "152 Wander Lane", 23)
+#
+# person_info(address="51 Cosmo Drive", name="Rean Schwarzer", phone="321-910-2238", age=28)
 
-# Unit 5 --- sss ---
+# Unit 5 --- Errors and Exceptions ---
 
+# value = int(input())
+# if value == 10  # Missing colon :
+#     print("You entered 10!")  # SyntaxError, due to missing colon
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# value = int(input())
+# value == 10:
+#     print("You entered 10!")
 
 # Unit 6 Code
 
