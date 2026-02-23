@@ -1,0 +1,5 @@
+DEBUG:root:Debug is the lowest log level
+INFO:root:Info is the second lowest log level
+WARNING:root:Warning is the third level
+ERROR:root:Error is the fourth level
+CRITICAL:root:Critical is the fifth and highest level

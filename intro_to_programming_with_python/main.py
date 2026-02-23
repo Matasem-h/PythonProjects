@@ -393,13 +393,85 @@
 
 # Unit 5 --- Errors and Exceptions ---
 
-# value = int(input())
-# if value == 10  # Missing colon :
-#     print("You entered 10!")  # SyntaxError, due to missing colon
+value = int(input())
+if value == 10  # Missing colon :
+    print("You entered 10!")  # SyntaxError, due to missing colon
 
 # value = int(input())
 # value == 10:
 #     print("You entered 10!")
+
+# value = input("Enter a number: ")
+# result = str(5 / int(value))
+# print("5 divided by " + value + " = " + result)         # If input = 0 ---> ZeroDivisionError
+
+# file_name = input()
+# my_file = open(file_name, "r")
+# print(my_file.read())
+# my_file.close()
+
+    # try - except
+
+# try:
+#     value = input("Enter a number: ")
+#     result = str(5 / int(value))
+#     print("5 divided by " + value + " = " + result)
+# except ZeroDivisionError:
+#     print("You tried to divide by zero!")
+# print("We're now at the end of the program.")
+
+# try:
+#     file_name = input()  # if the user enters a valid filename
+#     my_file = open(file_name, "r")
+#     print(my_file.read())
+#     my_file.close()
+# except FileNotFoundError:  # if the file does not exist
+#     print("File not found")
+# print("End of program")
+
+# try:
+#     my_variable = 10 / 10
+#     print(my_variable)
+# except ZeroDivisionError:
+#     print("Divided by zero!")
+# finally:
+#     print("Here's our finally block...")
+# print("End of program")
+
+# try:
+#     raise ZeroDivisionError
+# finally:
+#     print("Here's out finally block...")
+# print("End of program")
+
+# import logging
+#
+# logging.basicConfig(level=logging.DEBUG)
+#
+# logging.debug("Debug is the lowest log level")
+# logging.info("Info is the second lowest log level")
+# logging.warning("Warning is the third level")
+# logging.error("Error is the fourth level")
+# logging.critical("Critical is the fifth and highest level")
+
+# import logging
+#
+# logging.basicConfig(filename="mylog.log", filemode="w", level=logging.DEBUG)    #
+#
+# logging.debug("Debug is the lowest log level")
+# logging.info("Info is the second lowest log level")
+# logging.warning("Warning is the third level")
+# logging.error("Error is the fourth level")
+# logging.critical("Critical is the fifth and highest level")
+
+# import logging
+# logging.basicConfig(format="%(asctime)s: %(message)s")
+# logging.critical("My log message")
+
+
+
+
+
 
 # Unit 6 Code
 
