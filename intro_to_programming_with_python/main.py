@@ -393,9 +393,9 @@
 
 # Unit 5 --- Errors and Exceptions ---
 
-value = int(input())
-if value == 10  # Missing colon :
-    print("You entered 10!")  # SyntaxError, due to missing colon
+# value = int(input())
+# if value == 10  # Missing colon :
+#     print("You entered 10!")  # SyntaxError, due to missing colon
 
 # value = int(input())
 # value == 10:
@@ -469,11 +469,80 @@ if value == 10  # Missing colon :
 # logging.critical("My log message")
 
 
-
-
-
-
 # Unit 6 Code
+
+from math import floor
+
+print(floor(6.5))
+
+
+def floor(a):
+    if a == 1:
+        return "First Floor"
+    elif a == 2:
+        return "Second Floor"
+    elif a == 3:
+        return "Third Floor"
+
+
+print(floor(2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
