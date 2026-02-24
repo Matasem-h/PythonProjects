@@ -487,19 +487,67 @@
 #
 # print(floor(2))
 
-my_str = "Hello, World!"
-print(my_str)
+# my_str = "Hello, World!"
+# print(my_str)
+#
+#
+# def print_it_x_times(str, x):
+#     a = 0
+#     while a < x:
+#         print(str)
+#         a += 1
+#
+#
+# print_times = 5
+# print_it_x_times("Hello again, World!", print_times)
 
 
-def print_it_x_times(str, x):
-    a = 0
-    while a < x:
-        print(str)
-        a += 1
+# def add_two_numbers(a, b):
+#     """ Adds two numbers together and returns the result. """
+#     return a + b
+#
+#
+# help(add_two_numbers)
 
 
-print_times = 5
-print_it_x_times("Hello again, World!", print_times)
+import numpy  # Importing NumPy
+
+my_array = numpy.array([0, 5, 10, 15, 20, 25])  # Creating a NumPy array
+
+print(type(my_array))  # numpy.ndarray
+
+my_squares_array = my_array * 5  # Multiply the array by 5 and assign it to a new array
+
+print("First array = " + str(my_array))  # print my_array
+print("Second array = " + str(my_squares_array))  # print my_squares_array
+
+print("First array sum = " + str(my_array.sum()))  # my_array sum
+print("Second array sum = " + str(my_squares_array.sum()))  # my_squares_array sum
+
+print("First array mean = " + str(my_array.mean()))  # my_array mean
+print("Second array mean = " + str(my_squares_array.mean()))  # my_squares_array mean
+
+print("First array deviation  = " + str(my_array.std()))  # my_array deviation
+print("Second array deviation = " + str(my_array.std()))  # my_squares_array deviation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
