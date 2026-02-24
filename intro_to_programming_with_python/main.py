@@ -471,22 +471,35 @@
 
 # Unit 6 Code
 
-from math import floor
+# from math import floor
+#
+# print(floor(6.5))
+#
+#
+# def floor(a):
+#     if a == 1:
+#         return "First Floor"
+#     elif a == 2:
+#         return "Second Floor"
+#     elif a == 3:
+#         return "Third Floor"
+#
+#
+# print(floor(2))
 
-print(floor(6.5))
+my_str = "Hello, World!"
+print(my_str)
 
 
-def floor(a):
-    if a == 1:
-        return "First Floor"
-    elif a == 2:
-        return "Second Floor"
-    elif a == 3:
-        return "Third Floor"
+def print_it_x_times(str, x):
+    a = 0
+    while a < x:
+        print(str)
+        a += 1
 
 
-print(floor(2))
-
+print_times = 5
+print_it_x_times("Hello again, World!", print_times)
 
 
 
