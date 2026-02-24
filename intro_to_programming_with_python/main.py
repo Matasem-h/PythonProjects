@@ -531,14 +531,36 @@
 # print("Second array deviation = " + str(my_array.std()))  # my_squares_array deviation
 
 
+# import numpy
+# import matplotlib.pyplot as plt
+#
+# my_array = numpy.array([1, 10, 5, 4, 19, 0, 2, 8])
+# plt.plot(my_array)
+# plt.show()                                              # I actually marked out lol 😃
+
+
+# import matplotlib.pyplot as plt
+#
+# categories = 'Cars', 'Trucks', 'SUVs', 'Motorcycles', 'Minivans'
+# quantities = [250, 150, 175, 70, 90]
+#
+# fig, axl = plt.subplots()
+# axl.pie(quantities, labels=categories, autopct='%1.1f%%', shadow=True, startangle=90)
+# axl.axis('equal')
+# plt.show()
+
+
 import numpy
 import matplotlib.pyplot as plt
+from scipy import interpolate
 
-my_array = numpy.array([1, 10, 5, 4, 19, 0, 2, 8])
-plt.plot(my_array)
-plt.show()                                              # I actually marked out lol 😃
-
-
+x = numpy.arange(0, 10)
+y = x * x * x
+f = interpolate.interp1d(x, y)
+intx = numpy.arange(0, 9, 0.1)
+inty = f(intx)
+plt.plot(x, y, "o", intx, inty, "-")
+plt.show()
 
 
 
