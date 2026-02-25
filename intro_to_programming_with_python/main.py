@@ -550,26 +550,38 @@
 # plt.show()
 
 
-import numpy
-import matplotlib.pyplot as plt
-from scipy import interpolate
-
-x = numpy.arange(0, 10)
-y = x * x * x
-f = interpolate.interp1d(x, y)
-intx = numpy.arange(0, 9, 0.1)
-inty = f(intx)
-plt.plot(x, y, "o", intx, inty, "-")
-plt.show()
-
-
+# import numpy
+# import matplotlib.pyplot as plt
+# from scipy import interpolate
+#
+# x = numpy.arange(0, 10)
+# y = x * x * x
+# f = interpolate.interp1d(x, y)
+# intx = numpy.arange(0, 9, 0.1)
+# inty = f(intx)
+# plt.plot(x, y, "o", intx, inty, "-")
+# plt.show()
 
 
+# from scipy.stats import norm
+# import matplotlib.pyplot as plt
+#
+# my_data = norm.rvs(size=500)
+# plt.hist(my_data, bins=50)
+# plt.show()
 
 
+# import pandas as pd       # Doesn't work, who cares
+#
+# car_data = pd.read_csv('mtcars.csv')
+# car_data.head()
 
 
-
+# import pandas             # Doesn't work, who cares
+#
+# car_data = pandas.read_csv('mtcars.csv')
+# efficient_cars = car_data["mpg"] > 25
+# print(car_data[efficient_cars])
 
 
 
