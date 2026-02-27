@@ -584,34 +584,30 @@
 # print(car_data[efficient_cars])
 
 
+# my_str = "Hello, World!"  # Global
+
+#
+# def print_it_x_times(text, times):
+#     count = 0  # Local
+#     while count < times:
+#         print(text)
+#         count += 1
+#
+#
+# print_times = 3
+# print_it_x_times("Hi", print_times)
+#
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# numbers = [4, 8, 15, 16, 23, 42]
+# squares = []
+#
+# small_squares = [n * n for n in numbers if n < 20]
+# print(small_squares)
+#
+#
+#
+#
 
 
 
