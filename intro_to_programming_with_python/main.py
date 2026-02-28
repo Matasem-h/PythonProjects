@@ -611,23 +611,60 @@
 
 
 
+# my_dictionary = {
+#     "Name": "Matasem",
+#     "Hair color": "Brown",
+#     "Gender": "Tank",
+# }
+#
+# print(my_dictionary["Gender"])  # Tank
+
+# x = 5
+# print(x)
+# x *= 5
+# print(x)
+
+# for i in range(1, 6, 2):
+#     print(i)
+
+# e = 2 ** 3 / 4
+# print(e)
+
+# numbers = ["John Number", "Jack Number", "Jared Number"]
+#
+# # for n in numbers:
+#     # print(n)
 
 
+# numbers = [1, 2, 3, 4, 5]
+# squares = []  # empty list
+#
+# for n in numbers:
+#     squares.append(n * 2)
+#
+# print(numbers)
+# print(squares)
+
+# numbers = [4, 8, 15, 16, 23, 42]
+# it = iter(numbers)
+#
+# print(next(it))  # 4
+# print(next(it))  # 8
+# print(next(it))  # 15
+# print(next(it))  # 16
+# print(next(it))  # 23
+# print(next(it))  # 42
+#
+# for n in numbers:
+#     print(n)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+# def multiplication_function(a, b):
+#     x = a * b
+#     return x
+#
+#
+# print(multiplication_function(5, 5))
 
 
 
