@@ -666,23 +666,65 @@
 #
 # print(multiplication_function(5, 5))
 
+# file_name = input("Enter filename: ")
+# my_file = open(file_name, "r")  # Crashes if file doesn't exist
+# print(my_file.read())
+# my_file.close()
+
+# def outer():
+#         x = 10
+#         print("Outer", x)
+#
+#         def inner():
+#             x = 100
+#             print("Inner", x)
+#
+#         inner()
+#         print("Outer end", x)
+#
+#
+# outer()
+# print("Global: ", x)
 
 
+# def outer():
+#     x = 10
+#
+#     def inner():
+#         nonlocal x
+#         x = 100
+#
+#     inner()
+#     print("x = ", x)
+#
+#
+# outer()
+#
 
+#
+# x = 10
+# x = x + 5
+# print(x)
+#
+# s = "Python"
+# print(s[1:4])
+#
+#
+#
+# numbers = [1, 2, 3]
+# new = [n * 2 for n in numbers]
+# print(new)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+# numbers = [4, 8, 15, 16, 23, 42]
+# it = iter(numbers)  # iter() ---> Creates iterator from a list
+#
+# print(next(it))  # 4				# next() ---> gets the next item. This is a Manual Iterator, it is RARLEY used.
+# print(next(it))  # 8
+# print(next(it))  # 15
+# print(next(it))  # 16
+# print(next(it))  # 23
+# print(next(it))  # 42
+# print(next(it))  # StopIteration error, no more items
 
 
 
