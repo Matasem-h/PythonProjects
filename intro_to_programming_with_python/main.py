@@ -727,13 +727,122 @@
 # print(next(it))  # StopIteration error, no more items
 
 
+# try:
+#     print("Enter two numbers to divide: ")
+#     a = float(input("Enter the first number: "))
+#     b = float(input("Enter the second number: "))
+#
+#     x = a / b
+#
+#     print(f"The result of {a} / {b} is:", x)
+#
+# except ZeroDivisionError:
+#     print("You cannot divide by zero!")
+#
+# finally:
+#     print("End of program.")
+
+
+# try:  # Main code
+#     print("Enter a numbers to divide by 20: ")
+#     a = float(20)
+#     b = float(input("Enter a number: "))
+#
+#     x = a / b
+#
+#     print(f"The result of {a} / {b} is: ", x)
+#
+# except ZeroDivisionError:  # Defines what happens if ZeroDivisionError
+#     print("You cannot divide 20 by zero!")
+#
+# finally:  # Runs regardless
+#     print("Program finished.")
+#
+#
+# # 1. Storing Employees' Data:
+# employees_data = {
+#     1: {"Full_Name": "Matasem Habibullah", "Age": 28, "Salary": 4000},
+#     2: {"Full_Name": "John Cena", "Age": 50, "Salary": 400000},
+#     3: {"Full_Name": "Cody Rhodes", "Age": 38, "Salary": 300000},
+# }
+#
+# print(employees_data[1])
+# print(employees_data[2])
+# print(employees_data[3])
+#
+# # 2. Storing Difficulty and Grades of University Subjects:
+# subject_data = {
+#     "Introduction to Programming with Python": {"Difficulty": "Normal", "Grade": 100},
+#     "IT Infrastructure": {"Difficulty": "Very Hard", "Grade": 77},
+#     "Collaborative Work": {"Difficulty": "Easy", "Grade": 98},
+# }
+#
+# print(subject_data["Introduction to Programming with Python"])
+# print(subject_data["IT Infrastructure"])
+# print(subject_data["Collaborative Work"])
+
+
+# def print_my_range(prefix, z=range(10)):
+#     for x in z:
+#         print(str(prefix) + "-" + str(x))  # Fixed quotes and added closing parentheses ")"
+#
+#
+# my_range = range(1, 1000, 100)  # Fixed with range keyword, as before it was a Tuple.
+# print_my_range(1, my_range)
+
+
+
+
+# def my_func(a=1, b=2, c=3):
+#     if a > b and a > c:
+#         x = a
+#     elif b > a and b > c:
+#         x = b
+#     else:
+#         x = c
+#     return x
+#
+#
+# print(my_func())    # 3
+# print(my_func(12))  # 12
+# print(my_func(12, 24, 10))    # 24
+#
+
+# for i in range(5):
+#     print("Hi")  # Hi x5
+#
+# x = 0
+# while x < 5:
+#     print("Hi")  # Hi x5
+#     x += 1
+#
+#
+
+
+
+def check_it(a=1, b=2, c=3):    # defining the function, and the parameters with their default values
+
+    if a > b and a > c:         # if-statement that states what happens if a > b and c
+
+        return a                      # prints a
+
+    elif b > a and b > c:    # elif-statement that states what happens if b > a and c
+
+        return b                     # prints b
+
+    else:                                # else-statement that states what happen both earlier statements are false.
+
+        return c                     # prints c
 
 
 
 
 
+print(check_it())                   # 3 ---> a=1, b=2, c=3    # We can call the function with no arguments because the parameters in the function definition have default values.
 
+print(check_it(5))                # 5 ---> a=5, b=2, c=3
 
+print(check_it(1, 10, 3))    # 10 ---> a=1, b=10, c=3
 
 
 
