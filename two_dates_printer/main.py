@@ -1,10 +1,9 @@
 # This code can be used to print all dates between two specified dates.
-# I wrote this code specifically for myself, so I can keep track of my daily achievements.
+# I wrote this code specifically for myself, so I can keep track of my daily accomplishments.
 from datetime import date, timedelta
 
-# You can enter any two dates here to print all the days between them.
-start_date = date(2024, 11, 20)
-end_date = date(2025, 6, 30)
+start_date = date(2026, 3, 25)  # You can enter any two dates here to print all the days between them.
+end_date = date(2026, 9, 25)
 
 delta = end_date - start_date
 
