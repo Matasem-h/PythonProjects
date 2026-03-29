@@ -1,22 +1,23 @@
 # This is a simple page to test out new stuff that I'm learning.
+import pip
 
 # Simple code for personal tasks date printing
 	# Date printing
-from datetime import date, timedelta
-
-start_date = date(2025, 10, 29)
-end_date = date(2026, 4, 29)
-
-delta = end_date - start_date
-
-for i in range(delta.days + 1):
-    day = start_date + timedelta(days=i)
-    if day.weekday() == 4:
-        print(day.strftime("%d.%m.%Y") + " Friday")
-    # elif day.weekday() == 5:
-    #     print(day.strftime("%d.%m.%Y") + " Saturday")
-    else:
-        print(day.strftime("%d.%m.%Y") + " " + "                                                      | Course:                   | Walk:       | Push-Ups:    | Extra: ")
+# from datetime import date, timedelta
+#
+# start_date = date(2025, 10, 29)
+# end_date = date(2026, 4, 29)
+#
+# delta = end_date - start_date
+#
+# for i in range(delta.days + 1):
+#     day = start_date + timedelta(days=i)
+#     if day.weekday() == 4:
+#         print(day.strftime("%d.%m.%Y") + " Friday")
+#     # elif day.weekday() == 5:
+#     #     print(day.strftime("%d.%m.%Y") + " Saturday")
+#     else:
+#         print(day.strftime("%d.%m.%Y") + " " + "                                                      | Course:                   | Walk:       | Push-Ups:    | Extra: ")
 
 
 
@@ -199,4 +200,50 @@ for i in range(delta.days + 1):
 #
 # if __name__ == "__main__":
 #     app.run()
+
+
+# pip install -r requirements.txt
+
+
+
+# Dockerfile for Django backend
+
+FROM python: 3.11-slim
+WORKDIR/app
+COPY pip install -r requirements.txt
+COPY . .
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
