@@ -214,12 +214,51 @@ COPY pip install -r requirements.txt
 COPY . .
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 
+import json
+import boto3
+import urllib.parse
+
+# Initilizes the S3 client outside the handler for re-use it across invocation
+s3_client = boto3.client('s3')
 
 
+def lambda_handler(event, context):
+    # Extract the source bucket name and object key from the S3 event payload
+    source_bucket = event['Records'][0]['s3']['bucket']['name']
 
+    # URL-decoce the file key to handle special characters in file names
+    # e.g., spaces and symbols like "!" are encoded in S3 event notifications
+    video_key = urllib.parse.unquote_plus(
+        event['Records'][0]['s3']['object']['key']
+    )
 
+    # Destination bucket where processed videos are stored for CloudFront delivery
+    destination_bucket = 'squaredcircleplus-processed-videos'
 
+    print(f"Processing video: {video_key} from bucket: {source_bucket}")
 
+    # Copy the video from raw bucket to processed bucket
+    # In production, this step would invoke FFmpeg for several quality options
+    copy_source = {'Bucket': source_bucket, 'Key': video_key}
+    destination_key = f"processed/{video_key}"
+
+    s3_client.copy_object(
+        CopySource=copy_source,
+        Bucket=destination_bucket,
+        Key=destination_key
+    )
+
+    print(f"Successfully processed and moved: {video_key}")
+
+    # Return a success response confirming the video was processed
+    return {
+        'statusCode': 200,
+        'body': json.dumps({
+            'message': 'Video processed successfully',
+            'source': video_key,
+            'destination': destination_key
+        })
+    }
 
 
 
