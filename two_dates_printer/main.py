@@ -2,8 +2,8 @@
 # I wrote this code specifically for myself, so I can keep track of my daily accomplishments.
 from datetime import date, timedelta
 
-start_date = date(2026, 3, 25)  # You can enter any two dates here to print all the days between them.
-end_date = date(2026, 9, 25)
+start_date = date(2026, 9, 12)  # You can enter any two dates here to print all the days between them.
+end_date = date(2026, 11, 12)
 
 delta = end_date - start_date
 
